@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout layout--auth">
+
+    <div class="auth-main" aria-label="로그인">
+      <div class="auth-card" aria-label="경기 생성형 AI 서비스 로그인">
+        <div class="auth-head">
+          <img class="auth-logo" src="./../../../assets/img/logo_gg.png" alt="경기 생성형 AI 서비스">
+          <h1 class="auth-title">경기 생성형 AI 서비스</h1>
+          <p class="auth-desc">
+            비밀번호는 분실 시 관리자에게 문의해 주시기 바랍니다.<br>
+            <span class="auth-desc-sub">(관리자 연락처 : 0101, 1235, 0154)</span>
+          </p>
+        </div>
+
+        <form class="auth-form" action="#" method="post">
+
+          <div class="form-field">
+            <input type="text" id="login-id" name="username" class="form-input" placeholder="아이디" autocomplete="username">
+          </div>
+          
+          <!---------------------------------------------------------
+            form field 상태
+            - 기본: .form-field
+            - 에러: .form-field.is-error + input[aria-invalid="true"]
+            - 메시지: .form-message는 기본 숨김, 에러 시 노출
+          --------------------------------------------------------->
+          <div class="form-field">
+            <div class="form-control form-password">
+              <input type="password" id="login-pw" name="password" class="form-input" placeholder="비밀번호" autocomplete="current-password" aria-describedby="login-pw-msg">
+              <button type="button" class="field-action btn-pw-toggle" aria-label="비밀번호 표시" aria-pressed="false" data-password-toggle>
+                <span class="icon20 icon--visibility icon--muted" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- 에러 메세지 -->
+            <div class="form-message is-error" id="login-pw-msg">
+              <span class="icon24 icon--error-fill icon--danger" aria-hidden="true"></span>
+              <p class="form-message-text">
+                비밀번호는 8자 이상, 16자 이하의 영문자, 숫자 및 특수문자를 조합하여 사용해야 합니다.
+              </p>
+            </div>
+          </div>
+          
+
+          <div class="auth-actions">
+            <button type="submit" class="btn-solid-primary-l">로그인</button>
+            <a href="#" class="btn-text-s">비밀번호 변경</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="./../../../assets/js/form-password-toggle.js"></script>
+
+</body>
+</html>

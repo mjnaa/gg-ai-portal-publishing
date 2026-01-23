@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout">
+
+    <!------ 좌측 네비게이션 ------>
+    <aside class="layout-nav">
+      
+      <!------ 상단 고정 영역 ------>
+        <div class="nav-head">
+          <a class="logo" href="#" aria-label="홈으로">
+            <img src="./../../../assets/img/logo_admin.png" alt="공통 포털 관리자"/>
+          </a>
+        </div>
+
+        <!------ 메뉴 영역  ------>
+        <div class="nav-body" aria-label="메뉴 목록">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <p class="nav-title">AI 서비스</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-01 icon--basic icon"></span>
+                <span class="nav-text">AI 업무지원</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-02 icon--basic icon"></span>
+                <span class="nav-text">AI 법률 및 행정심판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-04 icon--basic icon"></span>
+                <span class="nav-text">AI 회의관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--model icon--basic icon"></span>
+                <span class="nav-text">LLMOps</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--dev icon--basic icon"></span>
+                <span class="nav-text">OCR</span>
+              </a>
+            </li>
+            
+            <li class="nav-item mt15">
+              <p class="nav-title">소통</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소(행정심판)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--article icon--basic icon"></span>
+                <span class="nav-text">게시판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--notifications icon--basic icon"></span>
+                <span class="nav-text">공지사항</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--person icon--basic icon"></span>
+                <span class="nav-text">사용자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--project icon--basic icon"></span>
+                <span class="nav-text">관리자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--resource icon--basic icon"></span>
+                <span class="nav-text">메뉴 관리</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+    </aside>
+
+
+    <!------ 메인 영역 ------>
+    <main class="layout-main">
+
+      <!------ 상단바 ------>
+      <header class="layout-header" aria-label="상단바">
+        <div class="header-title">
+          <h5 class="page-title">관리자 관리</h5>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="btn-outline-gray-s">로그아웃</button>
+        </div>
+      </header>
+        
+  
+      <!------ 본문 ------>
+      <section class="layout-body" aria-label="콘텐츠">
+
+        <div class="page page--wide">
+          
+          <!-- 조회/필터 영역 -->
+          <div class="filter-panel" aria-label="조회 조건">
+            <form class="filter-form">
+              <div class="filter-table">
+                <table class="filter-kv">
+                  <caption class="visually-hidden">조회 조건 입력</caption>
+                  <colgroup>
+                    <col style="width: 140px;">
+                    <col>
+                    <col style="width: 140px;">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <label class="kv-label" for="filter-name">성명</label>
+                      </th>
+                      <td>
+                        <div class="form-field">
+                          <input type="text" id="filter-name" class="form-input" placeholder="성명을 입력하세요">
+                        </div>
+                      </td>
+
+                      <th scope="row">
+                        <label class="kv-label" for="filter-nickname">별칭</label>
+                      </th>
+                      <td>
+                        <div class="form-field">
+                          <input type="text" id="filter-nickname" class="form-input" placeholder="별칭을 입력하세요">
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="filter-actions">
+                <button type="submit" class="btn-solid-primary-l btn-submit">
+                  <span class="icon20 icon--search icon--inverse"></span>
+                  조회
+                </button>
+              </div>
+            </form>
+          </div>
+
+          
+          <!-- 결과 테이블 영역 -->
+          <div class="result-panel" aria-label="조회 결과">
+            <div class="table-toolbar">
+              <div class="table-toolbar-left">
+                <p class="table-count">전체 건수 4,755</p>
+
+                <div class="table-page-size">
+                  <select class="form-select-s" aria-label="페이지당 건수">
+                    <option value="10" selected>10</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                  <span class="table-page-size-text">건씩 보기</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-panel table-panel--scroll">
+              <table class="data-table data-table--list">
+                <caption class="visually-hidden">관리자 목록</caption>
+                <colgroup>
+                  <col style="width:8%;">
+                  <col style="width:auto;">
+                  <col style="width:auto;">
+                  <col style="width:auto;">
+                  <col style="width:auto;">
+                  <col style="width:auto;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">성명</th>
+                    <th scope="col">별칭</th>
+                    <th scope="col">소속 부서</th>
+                    <th scope="col">최근 로그인</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>4,755</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,754</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,753</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,752</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,751</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,750</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,749</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,748</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,747</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+
+                  <tr>
+                    <td>4,746</td>
+                    <td class="is-ellipsis">Admin_ID</td>
+                    <td>
+                      <a href="#" class="table-link">홍길동</a>
+                    </td>
+                    <td class="is-ellipsis">관리자1</td>
+                    <td>AI데이터행정과</td>
+                    <td>2025.10.09 10:00:00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-footer">
+              <div class="table-footer-left"></div>
+
+              <div class="pagination">
+                <ul class="pagination-list">
+                  <li class="pagination-item">
+                    <button class="pagination-btn" type="button" aria-label="첫 페이지">
+                      <span class="icon20 icon--double-arrow-left icon--basic"></span>
+                    </button>
+                  </li>
+                  <li class="pagination-item">
+                    <button class="pagination-btn" type="button" aria-label="이전 페이지">
+                      <span class="icon20 icon--arrow-left icon--basic"></span>
+                    </button>
+                  </li>
+
+                  
+                  <li class="pagination-item">
+                    <button class="pagination-btn is-active" type="button" aria-label="1페이지">1</button>
+                  </li>
+                  <li class="pagination-item">
+                    <button class="pagination-btn" type="button" aria-label="2페이지">2</button>
+                  </li>
+                  <li class="pagination-item">
+                    <button class="pagination-btn" type="button" aria-label="3페이지">3</button>
+                  </li>
+                  <li class="pagination-item">
+                    <button class="pagination-btn" type="button" aria-label="4페이지">4</button>
+                  </li>
+                  <li class="pagination-item">
+                    <button class="pagination-btn" type="button" aria-label="5페이지">5</button>
+                  </li>
+
+                  <li class="pagination-item">
+                    <button class="pagination-btn" type="button" aria-label="다음 페이지">
+                      <span class="icon20 icon--double-arrow-right icon--basic"></span>
+                    </button>
+                  </li>
+                  <li class="pagination-item">
+                    <button class="pagination-btn" type="button" aria-label="마지막 페이지">
+                      <span class="icon20 icon--arrow-right icon--basic"></span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="table-footer-right">
+                <button type="button" class="btn-solid-primary-l btn-create">
+                  <span class="icon18 icon--add icon--inverse"></span>
+                  등록
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+  </div>
+
+</body>
+</html>

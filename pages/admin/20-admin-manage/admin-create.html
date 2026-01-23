@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout">
+
+    <!------ 좌측 네비게이션 ------>
+    <aside class="layout-nav">
+      
+      <!------ 상단 고정 영역 ------>
+        <div class="nav-head">
+          <a class="logo" href="#" aria-label="홈으로">
+            <img src="./../../../assets/img/logo_admin.png" alt="공통 포털 관리자"/>
+          </a>
+        </div>
+
+        <!------ 메뉴 영역  ------>
+        <div class="nav-body" aria-label="메뉴 목록">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <p class="nav-title">AI 서비스</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-01 icon--basic icon"></span>
+                <span class="nav-text">AI 업무지원</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-02 icon--basic icon"></span>
+                <span class="nav-text">AI 법률 및 행정심판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-04 icon--basic icon"></span>
+                <span class="nav-text">AI 회의관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--model icon--basic icon"></span>
+                <span class="nav-text">LLMOps</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--dev icon--basic icon"></span>
+                <span class="nav-text">OCR</span>
+              </a>
+            </li>
+            
+            <li class="nav-item mt15">
+              <p class="nav-title">소통</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소(행정심판)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--article icon--basic icon"></span>
+                <span class="nav-text">게시판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--notifications icon--basic icon"></span>
+                <span class="nav-text">공지사항</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--person icon--basic icon"></span>
+                <span class="nav-text">사용자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--project icon--basic icon"></span>
+                <span class="nav-text">관리자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--resource icon--basic icon"></span>
+                <span class="nav-text">메뉴 관리</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+    </aside>
+
+
+    <!------ 메인 영역 ------>
+    <main class="layout-main">
+
+      <!------ 상단바 ------>
+      <header class="layout-header" aria-label="상단바">
+        <div class="header-title">
+          <h5 class="page-title">관리자 관리</h5>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="btn-outline-gray-s">로그아웃</button>
+        </div>
+      </header>
+        
+  
+      <!------ 본문 ------>
+      <section class="layout-body" aria-label="콘텐츠">
+
+        <div class="page page--narrow">
+
+          <!-- 상단 타이틀 -->
+          <div class="page-head">
+            <h5 class="page-title">관리자 등록</h5>
+          </div>
+          
+          <!-- 콘텐츠 -->
+          <div class="page-content">
+            <form class="form-panel" aria-label="관리자 등록 폼">
+
+              <div class="form-layout">
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="admin-form-id">ID</label>
+                    <input type="text" id="admin-form-id" class="form-input" placeholder="ID를 입력하세요">
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="admin-form-name">이름</label>
+                    <input type="text" id="admin-form-name" class="form-input" placeholder="이름을 입력하세요">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="admin-form-password">비밀번호</label>
+                    <div class="form-control form-password">
+                      <input type="password" id="admin-form-password" class="form-input" placeholder="비밀번호를 입력하세요">
+                      <button type="button" class="field-action btn-pw-toggle" aria-label="비밀번호 표시" aria-pressed="false" data-password-toggle>
+                        <span class="icon20 icon--visibility icon--muted" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="admin-form-password-confirm">비밀번호 확인</label>
+                    <div class="form-control form-password">
+                      <input type="password" id="admin-form-password-confirm" class="form-input" placeholder="비밀번호를 한번 더 입력하세요">
+                      <button type="button" class="field-action btn-pw-toggle" aria-label="비밀번호 표시" aria-pressed="false" data-password-toggle>
+                        <span class="icon20 icon--visibility icon--muted" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="admin-form-bureau">실국</label>
+                    <input type="text" id="admin-form-bureau" class="form-input" placeholder="실국명을 입력하세요">
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="admin-form-dept">부서</label>
+                    <input type="text" id="admin-form-dept" class="form-input" placeholder="부서명을 입력하세요">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="admin-form-nickname">별칭</label>
+                    <input type="text" id="admin-form-nickname" class="form-input" placeholder="별칭을 입력하세요">
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="admin-form-position">직위</label>
+                    <input type="text" id="admin-form-position" class="form-input" placeholder="직위를 입력하세요">
+                  </div>
+                </div>
+              </div>
+
+              <!-- 버튼 -->
+              <div class="form-actions mb20">
+                <div class="form-actions-left">
+                </div>
+                <div class="form-actions-right">
+                  <button type="button" class="btn-outline-gray-l">목록</button>
+                  <button type="submit" class="btn-solid-primary-l">저장</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+        
+      </section>
+
+    </main>
+
+
+  </div>
+
+  <!-- JS -->
+  <script src="./../../../assets/js/form-password-toggle.js"></script>
+
+</body>
+</html>

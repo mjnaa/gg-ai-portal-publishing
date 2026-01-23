@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>경기도 생성형 AI - 공통 포털 퍼블리싱 리스트</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background:#2C2D30;
+      color:#f0f0f0;
+      padding:30px 40px;
+    }
+    h1 { font-size:20px; margin-bottom:8px; }
+    p { margin-bottom:24px; color:#bbb; }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th, td {
+      padding:8px 10px;
+      border:1px solid #555;
+      text-align:left;
+    }
+    th {
+      background:#656565;
+      border:1px solid #8a8a8a;
+      font-weight:500;
+      color:#fff;
+    }
+    .border-bold{border-bottom:4px double #555;}
+    a { color:#d5d5d5; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .acenter {text-align:center;}
+    .status-done { color:#4ade80; font-weight:600; }   /* 완료 */
+    .status-ing { color:#facc15; font-weight:600; }    /* 진행중 */
+    .status-todo { color:#f87171; font-weight:600; }   /* 미작업 */
+  </style>
+</head>
+<body>
+  <h1>경기도 생성형 AI - 공통 포털 퍼블리싱 리스트</h1>
+  <p>페이지 순서 및 폴더 구성은 화면설계서 장표 순서를 기준으로 작업하였습니다. 메뉴에 대한 별도 정의는 없어 재정렬하지 않았습니다.</p>
+
+  <table>
+    <colgroup>
+      <col />
+    </colgroup>
+    <thead>
+      <tr>
+        <th>서비스</th>
+        <th>화면</th>
+        <th>파일명(클릭)</th>
+        <th>진행상태</th>
+        <th>비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 공통 -->
+      <tr>
+        <td rowspan="2">공통</td>
+        <td>공통 레이아웃</td>
+        <td><a href="./pages/common/layout.html" target="_blank">common/layout.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+        </td>
+      </tr>
+      <tr class="border-bold">
+        <td>공통 팝업 (모달)</td>
+        <td><a href="./pages/common/popup.html" target="_blank">common/popup.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+
+      <!-- 사용자 -->
+      <tr>
+        <td rowspan="16">사용자</td>
+        <td>로그인</td>
+        <td><a href="./pages/user/10-auth/login.html" target="_blank">user/10-auth/login.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>비밀번호 변경</td>
+        <td><a href="./pages/user/10-auth/password-change.html" target="_blank">user/10-auth/password-change.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>메인</td>
+        <td><a href="./pages/user/20-main/main.html" target="_blank">user/20-main/main.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>사용자 정보</td>
+        <td><a href="./pages/user/30-account/profile.html" target="_blank">user/30-account/profile.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>지식 저장소</td>
+        <td><a href="./pages/user/40-archive/archive-list.html" target="_blank">user/40-archive/archive-list.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>지식 저장소 / 등록</td>
+        <td><a href="./pages/user/40-archive/archive-create.html" target="_blank">user/40-archive/archive-create.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>지식 저장소 / 상세</td>
+        <td><a href="./pages/user/40-archive/archive-detail.html" target="_blank">user/40-archive/archive-detail.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>지식 저장소(행정심판)</td>
+        <td><a href="./pages/user/41-archive-appeal/appeal-list.html" target="_blank">user/41-archive-appeal/appeal-list.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>지식 저장소(행정심판) / 등록</td>
+        <td><a href="./pages/user/41-archive-appeal/appeal-create.html" target="_blank">user/41-archive-appeal/appeal-create.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>지식 저장소(행정심판) / 상세</td>
+        <td><a href="./pages/user/41-archive-appeal/appeal-detail.html" target="_blank">user/41-archive-appeal/appeal-detail.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>게시판</td>
+        <td><a href="./pages/user/50-board/board-list.html" target="_blank">user/50-board/board-list.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>게시판 / 등록</td>
+        <td><a href="./pages/user/50-board/board-create.html" target="_blank">user/50-board/board-create.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>게시판 / 상세</td>
+        <td><a href="./pages/user/50-board/board-detail.html" target="_blank">user/50-board/board-detail.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>게시판 / 수정</td>
+        <td><a href="./pages/user/50-board/board-edit.html" target="_blank">user/50-board/board-edit.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>공지사항</td>
+        <td><a href="./pages/user/60-notice/notice-list.html" target="_blank">user/60-notice/notice-list.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr class="border-bold">
+        <td>공지사항 / 상세</td>
+        <td><a href="./pages/user/60-notice/notice-detail.html" target="_blank">user/60-notice/notice-detail.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+
+      <!-- 관리자 -->
+      <tr>
+        <td rowspan="18">관리자</td>
+        <td>메인(대시보드)</td>
+        <td><a href="./pages/admin/10-main/dashboard.html" target="_blank">admin/10-main/dashboard.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+        </td>
+      </tr>
+      <tr>
+        <td>관리자 관리</td>
+        <td><a href="./pages/admin/20-admin-manage/admin-list.html" target="_blank">admin/20-admin-manage/admin-list.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>관리자 관리 / 등록</td>
+        <td><a href="./pages/admin/20-admin-manage/admin-create.html" target="_blank">admin/20-admin-manage/admin-create.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>관리자 관리 / 상세(수정)</td>
+        <td><a href="./pages/admin/20-admin-manage/admin-detail.html" target="_blank">admin/20-admin-manage/admin-detail.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>사용자 관리</td>
+        <td><a href="./pages/admin/30-user-manage/user-list.html" target="_blank">admin/30-user-manage/user-list.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>사용자 관리 / 상세</td>
+        <td><a href="./pages/admin/30-user-manage/user-detail.html" target="_blank">admin/30-user-manage/user-detail.html</a></td>
+        <td class="status-done">완료</td>
+        <td>1차 작업분</td>
+      </tr>
+      <tr>
+        <td>공지사항</td>
+        <td><a href="./pages/admin/40-notice/notice-list.html" target="_blank">admin/40-notice/notice-list.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>공지사항 / 등록</td>
+        <td><a href="./pages/admin/40-notice/notice-create.html" target="_blank">admin/40-notice/notice-create.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>공지사항 / 상세</td>
+        <td><a href="./pages/admin/40-notice/notice-detail.html" target="_blank">admin/40-notice/notice-detail.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>게시판</td>
+        <td><a href="./pages/admin/50-board/board-list.html" target="_blank">admin/50-board/board-list.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>게시판 / 상세</td>
+        <td><a href="./pages/admin/50-board/board-detail.html" target="_blank">admin/50-board/board-detail.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>메뉴 관리</td>
+        <td><a href="./pages/admin/60-menu/menu-list.html" target="_blank">admin/60-menu/menu-list.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>메뉴 관리 / 등록</td>
+        <td><a href="./pages/admin/60-menu/menu-create.html" target="_blank">admin/60-menu/menu-create.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>메뉴 관리 / 수정</td>
+        <td><a href="./pages/admin/60-menu/menu-edit.html" target="_blank">admin/60-menu/menu-edit.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>지식 저장소</td>
+        <td><a href="./pages/admin/70-archive/archive-list.html" target="_blank">admin/70-archive/archive-list.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>지식 저장소 / 상세</td>
+        <td><a href="./pages/admin/70-archive/archive-detail.html" target="_blank">admin/70-archive/archive-detail.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>지식 저장소(행정심판)</td>
+        <td><a href="./pages/admin/71-archive-appeal/appeal-list.html" target="_blank">admin/71-archive-appeal/appeal-list.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>지식 저장소(행정심판) / 상세</td>
+        <td><a href="./pages/admin/71-archive-appeal/appeal-detail.html" target="_blank">admin/71-archive-appeal/appeal-detail.html</a></td>
+        <td class="status-todo">미작업</td>
+        <td></td>
+      </tr>
+      
+
+
+    </tbody>
+  </table>
+</body>
+</html>

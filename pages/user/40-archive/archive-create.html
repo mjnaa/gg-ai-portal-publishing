@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout">
+
+    <!------ 좌측 네비게이션 ------>
+    <aside class="layout-nav">
+      
+      <!------ 상단 고정 영역 ------>
+        <div class="nav-head">
+          <a class="logo" href="#" aria-label="홈으로">
+            <img src="./../../../assets/img/logo.png" alt="공통 포털"/>
+          </a>
+        </div>
+
+        <!------ 메뉴 영역  ------>
+        <div class="nav-body" aria-label="메뉴 목록">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <p class="nav-title">AI 서비스</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-01 icon--basic icon"></span>
+                <span class="nav-text">AI 업무지원</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-02 icon--basic icon"></span>
+                <span class="nav-text">AI 법률</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-03 icon--basic icon"></span>
+                <span class="nav-text">AI 행정심판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-04 icon--basic icon"></span>
+                <span class="nav-text">AI 회의관리</span>
+              </a>
+            </li>
+            <!-- 관리자 메뉴 -->
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--model icon--basic icon"></span>
+                <span class="nav-text">LLMOps</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--dev icon--basic icon"></span>
+                <span class="nav-text">OCR</span>
+              </a>
+            </li>-->
+            
+            <li class="nav-item mt15">
+              <p class="nav-title">소통</p>
+            </li>
+            <li class="nav-item is-active">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소(행정심판)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--article icon--basic icon"></span>
+                <span class="nav-text">게시판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--notifications icon--basic icon"></span>
+                <span class="nav-text">공지사항</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--person icon--basic icon"></span>
+                <span class="nav-text">사용자 정보</span>
+              </a>
+            </li>
+            <!-- 관리자 메뉴 -->
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--project icon--basic icon"></span>
+                <span class="nav-text">관리자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--resource icon--basic icon"></span>
+                <span class="nav-text">메뉴 관리</span>
+              </a>
+            </li>-->
+          </ul>
+        </div>
+        
+    </aside>
+
+
+    <!------ 메인 영역 ------>
+    <main class="layout-main">
+
+      <!------ 상단바 ------>
+      <header class="layout-header" aria-label="상단바">
+        <div class="header-title">
+          <h5 class="page-title">지식 저장소</h5>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="btn-outline-gray-s">로그아웃</button>
+        </div>
+      </header>
+        
+  
+      <!------ 본문 ------>
+      <section class="layout-body" aria-label="콘텐츠">
+
+        <div class="page page--narrow">
+
+          <!-- 상단 타이틀 -->
+          <div class="page-head">
+            <h5 class="page-title">지식 데이터 등록</h5>
+          </div>
+          
+          <!-- 콘텐츠 -->
+          <div class="page-content">
+            <form class="form-panel" aria-label="지식 데이터 등록 폼">
+
+              <div class="form-layout">
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="user-name">성명</label>
+                    <input type="text" id="user-name" class="form-input" readonly>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="user-division">실국</label>
+                    <input type="text" id="user-division" class="form-input" readonly>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="user-department">부서</label>
+                    <input type="text" id="user-department" class="form-input" readonly>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="project-name">사업명<span class="is-required">*</span></label>
+                    <input type="text" id="project-name" class="form-input" placeholder="사업명을 입력하세요" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label" for="doc-year">문서 생성 연도<span class="is-required">*</span></label>
+                    <input type="text" id="doc-year" class="form-input" placeholder="문서 생성 연도를 입력하세요" required>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="doc-visibility">공개여부<span class="is-required">*</span></label>
+                    <select class="form-select" id="doc-visibility" required>
+                      <option value="op1" selected>전체 공개</option>
+                      <option value="op2">실국 공개</option>
+                      <option value="op3">부서 공개</option>
+                    </select>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="project-detail-code">세부사업 코드<span class="is-required">*</span></label>
+                    <div class="form-search">
+                      <input type="search" id="project-detail-code" placeholder="세부사업 코드를 입력해주세요" required>
+                      <button type="button" class="field-action form-search-icon">
+                        <span aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <div class="form-head">
+                      <label class="form-label" for="project-detail-name">세부사업명</label>
+                      <span class="caption-text">세부사업 코드를 지정하면 자동으로 등록됩니다.</span>
+                    </div>
+                    <input type="text" id="project-detail-name" class="form-input" readonly>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label class="form-label">지식 데이터 업로드<span class="is-required">*</span></label>
+
+                    <!-- 멀티 파일 업로더 -->
+                    <div class="form-file form-file--multi" data-file-uploader-multi aria-label="지식 데이터 업로드">
+
+                      <!-- 상단 선택 영역 -->
+                      <div class="form-file-controls" role="group" aria-label="업로드 분류 선택">
+                        <div class="form-file-control">
+                          <label class="form-label" for="upload-target-service">대상 서비스</label>
+                          <select id="upload-target-service" class="form-select" required>
+                            <option value="" selected disabled>선택</option>
+                            <option value="op1">업무지원</option>
+                            <option value="op2">법률</option>
+                          </select>
+                        </div>
+
+                        <div class="form-file-control">
+                          <label class="form-label" for="upload-doc-type">문서 타입</label>
+                          <select id="upload-doc-type" class="form-select" required>
+                            <option value="" selected disabled>선택</option>
+                            <option value="op1">사업계획/결과</option>
+                            <option value="op2">보고서</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!-- 드롭존(기본 상태) -->
+                      <label class="form-file-drop" for="knowledge-files" data-form-file-drop>
+                        <input type="file" id="knowledge-files" class="form-file-input" data-form-file-input multiple>
+                        <div class="form-file-inner">
+                          <p class="form-file-title">지식 데이터 업로드</p>
+                          <p class="form-file-desc">드래그 혹은 클릭하여 업로드 해주세요.</p>
+                        </div>
+                      </label>
+
+                      <!-- 리스트 상태(파일 1개 이상일 때 노출) -->
+                      <div class="form-file-list-wrap" data-form-file-list-wrap aria-label="선택된 문서 목록">
+                        <div class="form-file-list-drop" data-form-file-list-drop>
+                          <!-- 체크 리스트 -->
+                          <ul class="form-file-list" data-form-file-list>
+                            <!-- 샘플 1 -->
+                            <li class="form-file-row" data-form-file-row>
+                              <label class="form-checkbox-label form-file-check">
+                                <input type="checkbox" class="form-checkbox" data-form-file-check checked>
+                                <span class="form-check-label visually-hidden">문서 선택</span>
+                              </label>
+
+                              <p class="form-file-name">2025년 해외 경기비즈니스센터(GBC) 운영 확대 계획(안)_대국민공개.pdf</p>
+
+                              <button type="button" class="form-file-remove" aria-label="첨부 문서 삭제" data-form-file-remove>
+                                <span class="icon20 icon--close icon--basic"></span>
+                              </button>
+                            </li>
+
+                            <!-- 샘플 2 -->
+                            <li class="form-file-row" data-form-file-row>
+                              <label class="form-checkbox-label form-file-check">
+                                <input type="checkbox" class="form-checkbox" data-form-file-check checked>
+                                <span class="form-check-label visually-hidden">문서 선택</span>
+                              </label>
+
+                              <span class="form-file-icon" aria-hidden="true">
+                                <span class="icon24 icon--docs icon--basic"></span>
+                              </span>
+
+                              <p class="form-file-name">경기비즈니스센터(GBC) 운영 관련 경기도 출연 계획.hwpx</p>
+
+                              <button type="button" class="form-file-remove" aria-label="첨부 문서 삭제" data-form-file-remove>
+                                <span class="icon20 icon--close icon--basic"></span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- 하단 버튼 영역 -->
+                      <div class="form-file-actions" aria-label="문서 작업">
+                        <div class="form-file-actions-left">
+                          <button type="button" class="btn-outline-gray-l" data-form-file-browse>문서 찾기</button>
+                          <button type="button" class="btn-solid-danger-l" data-form-file-remove-selected>문서 삭제</button>
+                        </div>
+
+                        <div class="form-file-actions-right">
+                          <button type="button" class="btn-solid-primary-l" data-form-file-submit>문서 전송</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field" aria-label="지식 데이터 업로드 리스트">
+                    <p class="form-label">지식 데이터 업로드 리스트</p>
+
+                    <!-- 전송후 업로드 리스트 -->
+                    <ul class="upload-history-list">
+                      <li class="upload-history-item">
+                        <span class="chip chip--gray">업무지원</span>
+                        <span class="chip chip--gray">사업계획/결과</span>
+                        <span class="form-file-icon" aria-hidden="true">
+                          <span class="icon22 icon--docs icon--basic"></span>
+                        </span>
+                        <span class="upload-history-name">전송 문서 리스트명 예시.pdf</span>
+                      </li>
+
+                      <li class="upload-history-item">
+                        <span class="chip chip--gray">업무지원</span>
+                        <span class="chip chip--gray">사업계획/결과</span>
+                        <span class="form-file-icon" aria-hidden="true">
+                          <span class="icon22 icon--docs icon--basic"></span>
+                        </span>
+                        <span class="upload-history-name">전송 문서 리스트명 예시 전송 문서 리스트명 예시.hwpx</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- 버튼 -->
+              <div class="form-actions mb20">
+                <div class="form-actions-left">
+                </div>
+                <div class="form-actions-right">
+                  <button type="button" class="btn-outline-gray-l">닫기</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+  </div>
+
+  <!-- JS -->
+  <script src="./../../../assets/js/file-uploader-multi.js"></script>
+
+</body>
+</html>

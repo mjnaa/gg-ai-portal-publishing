@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout">
+
+    <!------ 좌측 네비게이션 ------>
+    <aside class="layout-nav">
+      
+      <!------ 상단 고정 영역 ------>
+        <div class="nav-head">
+          <a class="logo" href="#" aria-label="홈으로">
+            <img src="./../../../assets/img/logo.png" alt="공통 포털"/>
+          </a>
+        </div>
+
+        <!------ 메뉴 영역  ------>
+        <div class="nav-body" aria-label="메뉴 목록">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <p class="nav-title">AI 서비스</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-01 icon--basic icon"></span>
+                <span class="nav-text">AI 업무지원</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-02 icon--basic icon"></span>
+                <span class="nav-text">AI 법률</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-03 icon--basic icon"></span>
+                <span class="nav-text">AI 행정심판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-04 icon--basic icon"></span>
+                <span class="nav-text">AI 회의관리</span>
+              </a>
+            </li>
+            <!-- 관리자 메뉴 -->
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--model icon--basic icon"></span>
+                <span class="nav-text">LLMOps</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--dev icon--basic icon"></span>
+                <span class="nav-text">OCR</span>
+              </a>
+            </li>-->
+            
+            <li class="nav-item mt15">
+              <p class="nav-title">소통</p>
+            </li>
+            <li class="nav-item is-active">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소(행정심판)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--article icon--basic icon"></span>
+                <span class="nav-text">게시판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--notifications icon--basic icon"></span>
+                <span class="nav-text">공지사항</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--person icon--basic icon"></span>
+                <span class="nav-text">사용자 정보</span>
+              </a>
+            </li>
+            <!-- 관리자 메뉴 -->
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--project icon--basic icon"></span>
+                <span class="nav-text">관리자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--resource icon--basic icon"></span>
+                <span class="nav-text">메뉴 관리</span>
+              </a>
+            </li>-->
+          </ul>
+        </div>
+        
+    </aside>
+
+
+    <!------ 메인 영역 ------>
+    <main class="layout-main">
+
+      <!------ 상단바 ------>
+      <header class="layout-header" aria-label="상단바">
+        <div class="header-title">
+          <h5 class="page-title">지식 저장소</h5>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="btn-outline-gray-s">로그아웃</button>
+        </div>
+      </header>
+        
+  
+      <!------ 본문 ------>
+      <section class="layout-body" aria-label="콘텐츠">
+
+        <div class="page page--narrow">
+
+          <!-- 상단 타이틀 -->
+          <div class="page-head">
+            <h5 class="page-title">지식 데이터 상세</h5>
+          </div>
+          
+          <!-- 콘텐츠 -->
+          <div class="page-content">
+
+            <div class="form-layout">
+              <!-- 스텝퍼 -->
+              <!-------------------------------------------------------------------
+              지식 데이터 처리 상태 스텝퍼
+              - 단계: 업로드 > OCR > 비식별화 > RAG (4단계 고정)
+              - 노드(원) 상태 클래스
+                · is-done   : 완료(검정 원)
+                · is-fail   : 실패(빨강 원)
+                · (기본)    : 대기/진행중 대상(회색 원)
+              - 커넥터(화살표) 상태 클래스 (해당 화살표는 "이전 단계 li"에 부여)
+                · is-link-done : 검정 화살표
+                · is-link-fail : 빨강 화살표(진행 실패용)
+              ------------------------------------------------------------------->
+              <div class="stepper-wrap mt10" aria-label="지식 데이터 처리 상태">
+                <ol class="stepper">
+                  <li class="step is-done is-link-done">
+                    <span class="step-node">업로드</span>
+                  </li>
+
+                  <li class="step">
+                    <span class="step-node">OCR</span>
+                  </li>
+
+                  <li class="step">
+                    <span class="step-node">비식별화</span>
+                  </li>
+
+                  <li class="step">
+                    <span class="step-node">RAG</span>
+                  </li>
+                </ol>
+              </div>
+
+              
+              <!-- 상세 -->
+              <div class="form-section">
+                <p class="form-label">작성자 정보</p>
+                <div class="info-table">
+                  <table class="info-kv">
+                    <caption class="visually-hidden">작성자 정보</caption>
+                    <colgroup>
+                      <col style="width: 160px;">
+                      <col>
+                      <col style="width: 160px;">
+                      <col>
+                    </colgroup>
+
+                    <tbody>
+                      <tr>
+                        <th scope="row">성명</th>
+                        <td colspan="3">홍길동</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">실국</th>
+                        <td>국제협력국</td>
+
+                        <th scope="row">부서</th>
+                        <td>국제통상과</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <p class="form-label">문서 정보</p>
+                <div class="info-table">
+                  <table class="info-kv">
+                    <caption class="visually-hidden">문서 정보</caption>
+                    <colgroup>
+                      <col style="width: 160px;">
+                      <col>
+                      <col style="width: 160px;">
+                      <col>
+                    </colgroup>
+
+                    <tbody>
+                      <tr>
+                        <th scope="row">문서 생성 연도</th>
+                        <td>2025</td>
+
+                        <th scope="row">공개여부</th>
+                        <td>부서 공개</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">세부사업 코드</th>
+                        <td colspan="3">64100002016300B4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">사업명</th>
+                        <td colspan="3">해외 경기 비즈니스센터(GBC) 운영 사업</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">세부사업명</th>
+                        <td colspan="3">해외 경기비즈니스센터(GBC) 운영(자체/직접)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">문서명</th>
+                        <td colspan="3">
+                          <a href="#" class="table-link">2025년 해외 경기비즈니스센터(GBC) 운영 확대 계획(안)_대국민공개.pdf</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">문서 유형</th>
+                        <td>PDF</td>
+
+                        <th scope="row">문서 시스템 등록일</th>
+                        <td>2025.09.02</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">대상 서비스</th>
+                        <td>업무지원</td>
+
+                        <th scope="row">문서 타입</th>
+                        <td>사업계획/결과</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- 버튼 -->
+            <div class="form-actions mb20">
+              <div class="form-actions-left">
+              </div>
+              <div class="form-actions-right">
+                <button type="button" class="btn-solid-danger-l">삭제</button>
+                <button type="button" class="btn-outline-gray-l">목록</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+  </div>
+
+</body>
+</html>
