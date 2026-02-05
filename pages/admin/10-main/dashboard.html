@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout">
+
+    <!------ 좌측 네비게이션 ------>
+    <aside class="layout-nav">
+      
+      <!------ 상단 고정 영역 ------>
+        <div class="nav-head">
+          <a class="logo" href="#" aria-label="홈으로">
+            <img src="./../../../assets/img/logo_admin.png" alt="공통 포털 관리자"/>
+          </a>
+        </div>
+
+        <!------ 메뉴 영역  ------>
+        <div class="nav-body" aria-label="메뉴 목록">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <p class="nav-title">AI 서비스</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-01 icon--basic icon"></span>
+                <span class="nav-text">AI 업무지원</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-02 icon--basic icon"></span>
+                <span class="nav-text">AI 법률 및 행정심판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-04 icon--basic icon"></span>
+                <span class="nav-text">AI 회의관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--model icon--basic icon"></span>
+                <span class="nav-text">LLMOps</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--dev icon--basic icon"></span>
+                <span class="nav-text">OCR</span>
+              </a>
+            </li>
+            
+            <li class="nav-item mt15">
+              <p class="nav-title">소통</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소(행정심판)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--article icon--basic icon"></span>
+                <span class="nav-text">게시판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--notifications icon--basic icon"></span>
+                <span class="nav-text">공지사항</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--person icon--basic icon"></span>
+                <span class="nav-text">사용자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--project icon--basic icon"></span>
+                <span class="nav-text">관리자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--resource icon--basic icon"></span>
+                <span class="nav-text">메뉴 관리</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+    </aside>
+
+
+    <!------ 메인 영역 ------>
+    <main class="layout-main">
+
+      <!------ 상단바 ------>
+      <header class="layout-header" aria-label="상단바">
+        <div class="header-title">
+          <h5 class="page-title">대시보드</h5>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="btn-outline-gray-s">로그아웃</button>
+        </div>
+      </header>
+        
+  
+      <!------ 본문 ------>
+      <section class="layout-body" aria-label="콘텐츠">
+
+        <div class="page page--wide">
+
+          <!-- 상단 툴바 -->
+          <div class="page-toolbar dashboard-toolbar">
+            <!-- 좌측 -->
+            <div class="toolbar-left">
+              <p class="page-greeting">홍길동님의 접속을 환영합니다.</p>
+            </div>
+
+            <!-- 우측 -->
+            <div class="toolbar-right">
+              <p class="page-updated">최종접속정보 : 2025-09-25 12:45</p>
+            </div>
+            
+          </div>
+
+          <!-- 콘텐츠 -->
+          <div class="page-content">
+            <div class="dashboard">
+
+              <div class="dashboard-top">
+                <!-- GPU 자원 현황 -->
+                <div class="dashboard-card dashboard-resource">
+                  <div class="dashboard-card-head">
+                    <p class="dashboard-card-title">GPU 자원 현황</p>
+                  </div>
+
+                  <div class="resource-grid">
+                    <div class="resource-group">
+                      <div class="resource-item">
+                        <!-- 차트 영역 (GPU) -->
+                        <div class="donut-placeholder"></div>
+                      </div>
+                      <div class="resource-item">
+                        <!-- 차트 영역 (CPU) -->
+                        <div class="donut-placeholder"></div>
+                      </div>
+                      <div class="resource-item">
+                        <!-- 차트 영역 (MEME) -->
+                        <div class="donut-placeholder"></div>
+                      </div>
+                    </div>
+
+                    <div class="resource-group">
+                      <div class="resource-item">
+                        <!-- 차트 영역 (GPU) -->
+                        <div class="donut-placeholder"></div>
+                      </div>
+                      <div class="resource-item">
+                        <!-- 차트 영역 (CPU) -->
+                        <div class="donut-placeholder"></div>
+                      </div>
+                      <div class="resource-item">
+                        <!-- 차트 영역 (MEME) -->
+                        <div class="donut-placeholder"></div>
+                      </div>
+                    </div>
+
+                    <div class="resource-group">
+                      <div class="resource-item">
+                        <!-- 차트 영역 (GPU) -->
+                        <div class="donut-placeholder"></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <!-- LLM 카탈로그 -->
+                <div class="dashboard-card">
+                  <div class="dashboard-card-head">
+                    <p class="dashboard-card-title">LLM 카탈로그</p>
+                  </div>
+
+                  <div class="card-grid">
+                    <a href="#" class="model-card">
+                      <div class="model-card-head">
+                        <img src="./../../../assets/img/model/logo-kt.png" alt="kt" />
+                      </div>
+
+                      <div class="model-card-body">
+                        <h6 class="model-name">믿음 2.0 Pro</h6>
+                        <p class="model-desc">한국어 특화 KT 대형 언어모델</p>
+                      </div>
+
+                      <div class="model-card-meta">
+                        <span class="model-updated">(파라미터 41B)</span>
+                      </div>
+                    </a>
+
+                    <a href="#" class="model-card">
+                      <div class="model-card-head">
+                        <img src="./../../../assets/img/model/logo-wisenut.png" alt="wisenut" />
+                      </div>
+
+                      <div class="model-card-body">
+                        <h6 class="model-name">WISE LLM</h6>
+                        <p class="model-desc">산업별 맞춤형 한국어 비즈니스 LLM</p>
+                      </div>
+
+                      <div class="model-card-meta">
+                        <span class="model-updated">(파라미터 41B)</span>
+                      </div>
+                    </a>
+
+                    <a href="#" class="model-card">
+                      <div class="model-card-head">
+                        <img src="./../../../assets/img/model/logo-konan.png" alt="konan" />
+                      </div>
+
+                      <div class="model-card-body">
+                        <h6 class="model-name">KONAN ENT-11</h6>
+                        <p class="model-desc">일반·추론 통합형 고효율 LLM</p>
+                      </div>
+
+                      <div class="model-card-meta">
+                        <span class="model-updated">(파라미터 41B)</span>
+                      </div>
+                    </a>
+
+                    <a href="#" class="model-card">
+                      <div class="model-card-head">
+                        <img src="./../../../assets/img/model/logo-upstage.png" alt="upstage" />
+                      </div>
+
+                      <div class="model-card-body">
+                        <h6 class="model-name">Solar Pro2</h6>
+                        <p class="model-desc">한국어·다국어 모두 강력한 업스테이지 모델</p>
+                      </div>
+
+                      <div class="model-card-meta">
+                        <span class="model-updated">(파라미터 41B)</span>
+                      </div>
+                    </a>
+
+                    <a href="#" class="model-card model-card--add">
+                      <div class="model-add-icon">
+                        <span class="icon24 icon--add icon--inverse icon"></span>
+                      </div>
+                      <span class="model-add-text">새 모델 등록하기</span>
+                    </a>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="dashboard-data">
+                <!-- 지식데이터 수집 현황 -->
+                <div class="dashboard-card">
+                  <div class="dashboard-card-head">
+                    <p class="dashboard-card-title">지식데이터 수집 현황</p>
+                  </div>
+                  <div class="data-item">
+                    <ul class="collect-stats" aria-label="지식데이터 수집 지표">
+                      <li class="collect-stat">
+                        <span class="collect-icon" aria-hidden="true">
+                          <img src="./../../../assets/img/icon/dashboard_ico_01.svg" alt="icon" />
+                        </span>
+                        <div class="collect-text">
+                          <span class="collect-label">총 문서수</span>
+                          <strong class="collect-value">34,208,964</strong>
+                        </div>
+                      </li>
+
+                      <li class="collect-stat">
+                        <span class="collect-icon" aria-hidden="true">
+                          <img src="./../../../assets/img/icon/dashboard_ico_02.svg" alt="icon" />
+                        </span>
+                        <div class="collect-text">
+                          <span class="collect-label">OCR 처리 건수</span>
+                          <strong class="collect-value">34,208,964</strong>
+                        </div>
+                      </li>
+
+                      <li class="collect-stat">
+                        <span class="collect-icon" aria-hidden="true">
+                          <img src="./../../../assets/img/icon/dashboard_ico_03.svg" alt="icon" />
+                        </span>
+                        <div class="collect-text">
+                          <span class="collect-label">RAG 처리 건수</span>
+                          <strong class="collect-value">34,208,964</strong>
+                        </div>
+                      </li>
+
+                      <li class="collect-stat">
+                        <span class="collect-icon" aria-hidden="true">
+                          <img src="./../../../assets/img/icon/dashboard_ico_04.svg" alt="icon" />
+                        </span>
+                        <div class="collect-text">
+                          <span class="collect-label">비식별처리 건수</span>
+                          <strong class="collect-value">34,208,964</strong>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+
+        </div>
+      </section>
+
+    </main>
+
+
+  </div>
+
+</body>
+</html>

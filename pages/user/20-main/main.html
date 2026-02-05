@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout layout--main-only">
+
+    <!------ 상단바 ------>
+    <header class="layout-header" aria-label="상단바">
+      <div class="header-title">
+        <a class="logo" href="#" aria-label="홈으로">
+          <img src="./../../../assets/img/logo.png" alt="AI 포털">
+        </a>
+      </div>
+
+      <div class="header-actions">
+        <ul class="header-nav-list">
+          <li class="header-nav-item"><a class="header-nav-link" href="#">게시판</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="#">공지사항</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="#">김경기님</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!------ 메인 영역 ------>
+    <main class="layout-main">
+
+      <section class="layout-body" aria-label="콘텐츠">
+        <div class="main-center">
+
+          <!-- 히어로 영역 -->
+          <section class="main-hero" aria-label="메인 검색">
+            <div class="bonggong-img">
+              <img src="./../../../assets/img/bonggong_01.gif" alt="경기도 캐릭터 이미지">
+            </div>
+
+            <h2 class="hero-title">오늘은 무엇을 도와드릴까요?</h2>
+
+            <!-- 입력 + 모델 선택 -->
+            <form class="composer-form">
+                <div class="chat-m">
+                  <div class="composer-row">
+                    <!-- 입력 영역 -->
+                    <div class="input-area">
+                      <textarea id="chat-input" class="chat-textarea" name="comment"
+                        aria-label="채팅 입력창" placeholder="무엇이든 물어보세요."
+                        rows="1" maxlength="2000" minlength="1" required></textarea>
+                    </div>
+
+                    <!-- 우측 영역 -->
+                    <div class="right-area">
+                      <!-- 전송 버튼-->
+                      <button class="btn-icon-solid-m" type="submit" aria-label="전송">
+                        <span class="icon20 icon--near icon--basic"></span>
+                      </button>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="composer-model">
+                  <select class="form-select-xs" id="llm-model" name="service">
+                    <option value="op1" selected>AI 업무지원</option>
+                    <option value="op2">AI 법률</option>
+                    <option value="op3">AI 행정심판</option>
+                    <option value="op4">AI 회의관리</option>
+                  </select>
+                </div>
+            </form>
+
+            <!-- 서비스 칩 -->
+            <nav class="hero-services" aria-label="서비스 바로가기">
+              <ul class="service-chip-list">
+                <li>
+                  <a href="#" class="service-chip">
+                    <span class="chip-icon blue">
+                      <span class="icon18 icon--llm-01 icon--inverse" aria-hidden="true"></span>
+                    </span>
+                    <span class="chip-text">AI 업무지원</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="service-chip">
+                    <span class="chip-icon green">
+                      <span class="icon18 icon--llm-02 icon--inverse" aria-hidden="true"></span>
+                    </span>
+                    <span class="chip-text">AI 법률</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="service-chip">
+                    <span class="chip-icon orange">
+                      <span class="icon18 icon--llm-03 icon--inverse" aria-hidden="true"></span>
+                    </span>
+                    <span class="chip-text">AI 행정심판</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="service-chip">
+                    <span class="chip-icon sky">
+                      <span class="icon18 icon--llm-04 icon--inverse" aria-hidden="true"></span>
+                    </span>
+                    <span class="chip-text">회의관리</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="service-chip">
+                    <span class="chip-icon mint">
+                      <span class="icon18 icon--cloud-upload icon--inverse" aria-hidden="true"></span>
+                    </span>
+                    <span class="chip-text">지식 저장소</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- 최근 대화 -->
+          <section class="recent-panel" aria-label="최근 대화">
+            <h2 class="recent-title">최근 대화</h2>
+
+            <ul class="recent-list">
+              <li class="recent-item">
+                <a class="recent-link" href="#">
+                  <span class="recent-icon blue">
+                    <span class="icon22 icon--llm-01 icon--inverse" aria-hidden="true"></span>
+                  </span>
+                  <span class="recent-body">
+                    <span class="recent-subject">조례 규칙 제정 및 개정지원에 대해 알려줘</span>
+                    <span class="recent-snippet">조례·규칙 제정 및 개정 지원은 지방자치단체나 공공기관이 법적 정당성을 갖춘 규범을 만들고 운영할 수 있도록 정당성을 갖춘 규범을 만들고 운영할 수 있도록</span>
+                  </span>
+                  <span class="recent-date">10월 23일</span>
+                </a>
+              </li>
+              <li class="recent-item">
+                <a class="recent-link" href="#">
+                  <span class="recent-icon green">
+                    <span class="icon22 icon--llm-02 icon--inverse" aria-hidden="true"></span>
+                  </span>
+                  <span class="recent-body">
+                    <span class="recent-subject">반려동물 관한 조례안 이러이러한 내용에 관해서 제정안 작성해줘</span>
+                    <span class="recent-snippet">네, 제정안 작성해드리겠습니다. 경기 반려동물 관한 조례안 1.제안이유 경기도 반려동물 테마파크의 공식 명칭</span>
+                  </span>
+                  <span class="recent-date">10월 22일</span>
+                </a>
+              </li>
+              <li class="recent-item">
+                <a class="recent-link" href="#">
+                  <span class="recent-icon blue">
+                    <span class="icon22 icon--llm-01 icon--inverse" aria-hidden="true"></span>
+                  </span>
+                  <span class="recent-body">
+                    <span class="recent-subject">다음을 업무보고 표준서식에 맞춰 작성합니다 : 10월 2주차 마케팅 진행 현황, 신규 랜딩페이지</span>
+                    <span class="recent-snippet">요청해주신 내용을 스마트도우미 업무보고 표준서식에 맞춰 작성해드리겠습니다. 1.제목 : 10월 2주차 마케팅</span>
+                  </span>
+                  <span class="recent-date">10월 22일</span>
+                </a>
+              </li>
+              <li class="recent-item">
+                <a class="recent-link" href="#">
+                  <span class="recent-icon orange">
+                    <span class="icon22 icon--llm-03 icon--inverse" aria-hidden="true"></span>
+                  </span>
+                  <span class="recent-body">
+                    <span class="recent-subject">청소년 출입 금지시설에 출입했을 때, 경기도 행정심판 결과 좀 알려줘</span>
+                    <span class="recent-snippet">경기도에서 청소년 출입 금지시설에 출입했을 때의 행정심판 결과는 여러 사례를 통해 다양한 결론이 도출될</span>
+                  </span>
+                  <span class="recent-date">10월 21일</span>
+                </a>
+              </li>
+
+            </ul>
+          </section>
+
+          <p class="main-updated">최종접속정보 : 2025-09-25 12:45</p>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- JS -->
+  <script src="./../../../assets/js/chat-textarea.js"></script>
+
+</body>
+</html>

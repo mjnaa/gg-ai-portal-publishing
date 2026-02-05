@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout">
+
+    <!------ 좌측 네비게이션 ------>
+    <aside class="layout-nav">
+      
+      <!------ 상단 고정 영역 ------>
+        <div class="nav-head">
+          <a class="logo" href="#" aria-label="홈으로">
+            <img src="./../../../assets/img/logo.png" alt="공통 포털"/>
+          </a>
+        </div>
+
+        <!------ 메뉴 영역  ------>
+        <div class="nav-body" aria-label="메뉴 목록">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <p class="nav-title">AI 서비스</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-01 icon--basic icon"></span>
+                <span class="nav-text">AI 업무지원</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-02 icon--basic icon"></span>
+                <span class="nav-text">AI 법률</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-03 icon--basic icon"></span>
+                <span class="nav-text">AI 행정심판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-04 icon--basic icon"></span>
+                <span class="nav-text">AI 회의관리</span>
+              </a>
+            </li>
+            <!-- 관리자 메뉴 -->
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--model icon--basic icon"></span>
+                <span class="nav-text">LLMOps</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--dev icon--basic icon"></span>
+                <span class="nav-text">OCR</span>
+              </a>
+            </li>-->
+            
+            <li class="nav-item mt15">
+              <p class="nav-title">소통</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소(행정심판)</span>
+              </a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--article icon--basic icon"></span>
+                <span class="nav-text">게시판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--notifications icon--basic icon"></span>
+                <span class="nav-text">공지사항</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--person icon--basic icon"></span>
+                <span class="nav-text">사용자 정보</span>
+              </a>
+            </li>
+            <!-- 관리자 메뉴 -->
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--project icon--basic icon"></span>
+                <span class="nav-text">관리자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--resource icon--basic icon"></span>
+                <span class="nav-text">메뉴 관리</span>
+              </a>
+            </li>-->
+          </ul>
+        </div>
+        
+    </aside>
+
+
+    <!------ 메인 영역 ------>
+    <main class="layout-main">
+
+      <!------ 상단바 ------>
+      <header class="layout-header" aria-label="상단바">
+        <div class="header-title">
+          <h5 class="page-title">게시판</h5>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="btn-outline-gray-s">로그아웃</button>
+        </div>
+      </header>
+        
+  
+      <!------ 본문 ------>
+      <section class="layout-body" aria-label="콘텐츠">
+
+        <div class="page page--narrow">
+
+          <!-- 상단 타이틀 -->
+          <div class="page-head">
+            <h5 class="page-title">게시판 상세</h5>
+          </div>
+          
+          <!-- 콘텐츠 -->
+          <div class="page-content">
+
+            <div class="board-layout">
+              
+              <div class="form-section">
+                <div class="info-table">
+                  <table class="info-kv">
+                    <colgroup>
+                      <col style="width: 144px;">
+                      <col>
+                      <col style="width: 144px;">
+                      <col>
+                      <col style="width: 144px;">
+                      <col>
+                    </colgroup>
+
+                    <tbody>
+                      <tr>
+                        <th scope="row" colspan="6" class="board-title">바이오부터 AI, 양자기술까지…미래혁신기술 한자리에!</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">작성자</th>
+                        <td>홍길동</td>
+
+                        <th scope="row">등록일</th>
+                        <td>2025.09.25 14:56</td>
+
+                        <th scope="row">조회수</th>
+                        <td>232</td>
+                      </tr>
+                      <tr>
+                        <td colspan="6" class="board-content">
+                          내일이 먼저 시작되는 경기.  ⓒ 경기도청<br><br>
+                          ‘기술이 제곱된다는 말을 들어보셨나요?’ 이 말을 현실로 실현하기 위한<br>
+                          ‘바이오(Bio)‧인공지능(AI)‧양자기술(Quantum)’ 융합 교류의 장이 열렸습니다
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">첨부파일</th>
+                        <td colspan="5">
+                          <span class="form-file-icon" aria-hidden="true">
+                            <span class="icon22 icon--docs icon--basic"></span>
+                            <a href="#" class="table-link">2025년 해외 경기비즈니스센터(GBC) 운영 확대 계획(안)_대국민공개.pdf</a>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              
+              <!-- 댓글 영역 -->
+              <div class="board-comment">
+
+                <!-- 댓글 목록 -->
+                <div class="comment-list" aria-label="댓글 목록">
+                  <div class="comment-item">
+                    <div class="comment-meta">
+                      <strong class="comment-writer">홍길동</strong>
+                      <span class="comment-date">(2025.09.25)</span>
+                    </div>
+                    <p class="comment-body">댓글입니다. 댓글입니다.</p>
+                  </div>
+
+                  <div class="comment-item">
+                    <div class="comment-meta">
+                      <strong class="comment-writer">홍길동</strong>
+                      <span class="comment-date">(2025.09.25)</span>
+                    </div>
+                    <p class="comment-body">댓글입니다. 댓글입니다.</p>
+                  </div>
+                </div>
+
+                <!-- 댓글 작성 -->
+                <div class="comment-write" aria-label="댓글 작성">
+                  <div class="comment-write-inner">
+                    <label for="comment-input" class="visually-hidden">댓글 입력</label>
+                    <textarea class="form-textarea" id="comment-input" placeholder="댓글을 입력하세요" ></textarea>
+                    <button type="button" class="btn-outline-gray-l btn-comment">등록</button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- 버튼 -->
+            <div class="form-actions mb20">
+              <div class="form-actions-left">
+              </div>
+              <div class="form-actions-right">
+                <button type="button" class="btn-solid-danger-l">삭제</button>
+                <button type="button" class="btn-solid-primary-l">수정</button>
+                <button type="button" class="btn-outline-gray-l">목록</button>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>경기도 생성형 AI - 공통 포털</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="경기도 생성형 AI - 공통 포털" />
+  <!-- style sheets -->
+  <link href="./../../../assets/css/tokens.css" rel="stylesheet">
+  <link href="./../../../assets/css/font.css" rel="stylesheet">
+  <link href="./../../../assets/css/base.css" rel="stylesheet">
+  <link href="./../../../assets/css/layout.css" rel="stylesheet">
+  <link href="./../../../assets/css/components.css" rel="stylesheet">
+  <link href="./../../../assets/css/mask_datauri.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="./../../../assets/img/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+  <div class="layout">
+
+    <!------ 좌측 네비게이션 ------>
+    <aside class="layout-nav">
+      
+      <!------ 상단 고정 영역 ------>
+        <div class="nav-head">
+          <a class="logo" href="#" aria-label="홈으로">
+            <img src="./../../../assets/img/logo.png" alt="공통 포털"/>
+          </a>
+        </div>
+
+        <!------ 메뉴 영역  ------>
+        <div class="nav-body" aria-label="메뉴 목록">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <p class="nav-title">AI 서비스</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-01 icon--basic icon"></span>
+                <span class="nav-text">AI 업무지원</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-02 icon--basic icon"></span>
+                <span class="nav-text">AI 법률</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-03 icon--basic icon"></span>
+                <span class="nav-text">AI 행정심판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--llm-04 icon--basic icon"></span>
+                <span class="nav-text">AI 회의관리</span>
+              </a>
+            </li>
+            <!-- 관리자 메뉴 -->
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--model icon--basic icon"></span>
+                <span class="nav-text">LLMOps</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--dev icon--basic icon"></span>
+                <span class="nav-text">OCR</span>
+              </a>
+            </li>-->
+            
+            <li class="nav-item mt15">
+              <p class="nav-title">소통</p>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--cloud-upload icon--basic icon"></span>
+                <span class="nav-text">지식 저장소(행정심판)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--article icon--basic icon"></span>
+                <span class="nav-text">게시판</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--notifications icon--basic icon"></span>
+                <span class="nav-text">공지사항</span>
+              </a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--person icon--basic icon"></span>
+                <span class="nav-text">사용자 정보</span>
+              </a>
+            </li>
+            <!-- 관리자 메뉴 -->
+            <!--<li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--project icon--basic icon"></span>
+                <span class="nav-text">관리자 관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon20 icon--resource icon--basic icon"></span>
+                <span class="nav-text">메뉴 관리</span>
+              </a>
+            </li>-->
+          </ul>
+        </div>
+        
+    </aside>
+
+
+    <!------ 메인 영역 ------>
+    <main class="layout-main">
+
+      <!------ 상단바 ------>
+      <header class="layout-header" aria-label="상단바">
+        <div class="header-title">
+          <h5 class="page-title">사용자 정보</h5>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="btn-outline-gray-s">로그아웃</button>
+        </div>
+      </header>
+        
+  
+      <!------ 본문 ------>
+      <section class="layout-body" aria-label="콘텐츠">
+
+        <div class="page page--narrow">
+
+          <!-- 상단 타이틀 -->
+          <div class="page-head">
+            <h5 class="page-title">사용 현황</h5>
+          </div>
+          
+          <!-- 사용 현황 -->
+          <div class="page-content">
+
+            <div class="form-layout is-row">
+
+              <!-- 왼쪽 : 차트 -->
+              <div class="usage-chart">
+                <div class="chart-placeholder">
+                  <span class="chart-total">
+                    총 117건
+                  </span>
+                </div>
+              </div>
+
+              <!-- 오른쪽 : 상세 -->
+              <div class="form-section">
+                <div class="info-table">
+                  <table class="info-kv">
+                    <caption class="visually-hidden">사용 현황</caption>
+                    <colgroup>
+                      <col style="width: 160px;">
+                      <col>
+                      <col style="width: 160px;">
+                      <col>
+                    </colgroup>
+
+                    <tbody>
+                      <tr>
+                        <th scope="row">전체</th>
+                        <td>117건</td>
+
+                        <th scope="row">
+                          <span class="status-dot status-dot--green" aria-hidden="true"></span>
+                          OCR
+                        </th>
+                        <td>100건</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <span class="status-dot status-dot--orange" aria-hidden="true"></span>
+                          비식별화
+                        </th>
+                        <td>90건</td>
+
+                        <th scope="row">
+                          <span class="status-dot status-dot--blue" aria-hidden="true"></span>
+                          RAG
+                        </th>
+                        <td>80</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+
+          <!-- 상단 타이틀 -->
+          <div class="page-head mt30">
+            <h5 class="page-title">계정 정보</h5>
+          </div>
+          
+          <!-- 계정 정보 -->
+          <div class="page-content">
+
+            <div class="form-layout">
+              
+              <!-- 상세 -->
+              <div class="form-section">
+                <div class="info-table">
+                  <table class="info-kv">
+                    <caption class="visually-hidden">계정 정보</caption>
+                    <colgroup>
+                      <col style="width: 160px;">
+                      <col>
+                      <col style="width: 160px;">
+                      <col>
+                    </colgroup>
+
+                    <tbody>
+                      <tr>
+                        <th scope="row">이름</th>
+                        <td>홍길동(SSO_ID)</td>
+
+                        <th scope="row">직위</th>
+                        <td>주무관</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">실국</th>
+                        <td>AI국</td>
+
+                        <th scope="row">부서</th>
+                        <td>AI데이터행정과</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">기본 서비스</th>
+                        <td>
+                          <select class="form-select" id="basic-service">
+                            <option value="op1" selected>AI 업무지원</option>
+                            <option value="op2">AI 법률</option>
+                            <option value="op3">AI 행정심판</option>
+                            <option value="op4">AI 회의관리</option>
+                          </select>
+                        </td>
+
+                        <th scope="row">서비스별 LLM</th>
+                        <td>
+                          <div class="select-row">
+                            <select class="form-select" id="llm-service">
+                              <option value="op1" selected>AI 업무지원</option>
+                              <option value="op2">AI 법률</option>
+                              <option value="op3">AI 행정심판</option>
+                              <option value="op4">AI 회의관리</option>
+                            </select>
+                            
+                            <select class="form-select" id="llm-model">
+                              <option value="op1" selected>믿음 모델</option>
+                              <option value="op2">모델 2</option>
+                              <option value="op3">모델 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+  </div>
+
+</body>
+</html>
